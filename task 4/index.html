@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Shyma S M</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md w-full">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl font-bold text-blue-800">Shyma S M</h1>
+      <nav class="hidden md:flex space-x-4 text-sm">
+        <a href="index.html" class="text-blue-500 font-semibold">Home</a>
+        <a href="about.html" class="hover:text-blue-500">About</a>
+        <a href="project.html" class="hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-blue-600 text-lg" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block text-blue-500 font-semibold">Home</a>
+      <a href="about.html" class="block hover:text-blue-500">About</a>
+      <a href="project.html" class="block hover:text-blue-500">Projects</a>
+      <a href="contact.html" class="block hover:text-blue-500">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="flex-grow flex items-center justify-center text-center px-4 py-12">
+    <div>
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">Hi, I'm Shyma S M</h2>
+      <p class="text-lg sm:text-xl text-gray-600 max-w-xl mx-auto">
+        A passionate Web Developer and UI/UX enthusiast who enjoys crafting visually appealing and user-friendly digital experiences.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-4 text-sm text-gray-700 w-full">
+    © 2025 Shyma S M
+  </footer>
+
+</body>
+</html>

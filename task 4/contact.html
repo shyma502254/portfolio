@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Shyma S M</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mobile-menu");
+      nav.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md w-full">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl font-bold text-blue-800">Shyma S M</h1>
+      <nav class="hidden md:flex space-x-4 text-sm">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="about.html" class="hover:text-blue-500">About</a>
+        <a href="project.html" class="hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="text-blue-500 font-semibold">Contact</a>
+      </nav>
+      <!-- Mobile toggle -->
+      <button class="md:hidden text-blue-600 text-lg" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block hover:text-blue-500">Home</a>
+      <a href="about.html" class="block hover:text-blue-500">About</a>
+      <a href="project.html" class="block hover:text-blue-500">Projects</a>
+      <a href="contact.html" class="block text-blue-500 font-semibold">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow max-w-xl w-full mx-auto px-4 py-10">
+    <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center">Contact Me</h2>
+    <form action="mailto:shy96746@gmail.com" method="POST" class="space-y-4 bg-white p-6 rounded-lg shadow border">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full p-3 border rounded" />
+      <input type="email" name="email" placeholder="Your Email" required class="w-full p-3 border rounded" />
+      <input type="tel" name="phone" placeholder="Your Phone Number" class="w-full p-3 border rounded" />
+      <textarea name="message" rows="5" placeholder="Your Message" required class="w-full p-3 border rounded"></textarea>
+      <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 w-full">Send</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-6 text-sm text-gray-700 space-y-2 w-full">
+    <p>© 2025 Shyma S M</p>
+    <p>📧 Email: <a href="mailto:shy96746@gmail.com" class="text-blue-600 hover:underline">shy96746@gmail.com</a></p>
+    <p>📞 Phone: <a href="tel:+919629640095" class="text-blue-600 hover:underline">9629640095</a></p>
+    <p>
+      🔗 
+      <a href="https://www.linkedin.com/in/shyma-s-m-6812a325a" target="_blank" class="text-blue-600 hover:underline">LinkedIn</a> |
+      <a href="https://github.com/shyma502254" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+    </p>
+  </footer>
+
+</body>
+</html>

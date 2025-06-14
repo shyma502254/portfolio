@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Shyma S M</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Mobile menu toggle
+    function toggleMenu() {
+      const nav = document.getElementById('mobile-menu');
+      nav.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-pink-50 to-white text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md w-full">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl font-bold text-blue-800">Shyma S M</h1>
+      <nav class="hidden md:flex space-x-4 text-sm">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="about.html" class="text-blue-500 font-semibold">About</a>
+        <a href="project.html" class="hover:text-blue-500">Projects</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <!-- Mobile toggle -->
+      <button class="md:hidden text-blue-600 text-lg" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block hover:text-blue-500">Home</a>
+      <a href="about.html" class="block text-blue-500 font-semibold">About</a>
+      <a href="project.html" class="block hover:text-blue-500">Projects</a>
+      <a href="contact.html" class="block hover:text-blue-500">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-8 text-gray-900">About Me</h2>
+
+    <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-6">
+      I recently transitioned into product design after a journey into web development and UI/UX design. With a strong foundation in front-end technologies and a passion for design, I’ve explored how technology can solve real-world problems through thoughtful and elegant interfaces.
+      <br><br>
+      Strategic design thinking is at the heart of my approach—whether building responsive layouts or improving user interaction. For me, web and UI/UX design is more than visuals; it’s about crafting intuitive, purposeful experiences that make a difference.
+      <br><br>
+      Today, I’m excited about using design to bridge technology and people—considering business goals, usability, accessibility, and emotional impact to create solutions that truly matter.
+    </p>
+
+    <!-- Location & Contact -->
+    <div class="text-base text-gray-700 mb-8">
+      📍 Based in Tamil Nadu, India <br>
+      📩 Let’s connect: 
+      <a href="mailto:shy96746@gmail.com" class="text-blue-600 underline break-all">shy96746@gmail.com</a>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="mb-10">
+      <h3 class="text-2xl font-semibold text-gray-800 mb-4">💡 Skills</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-gray-700">
+        <span>HTML / CSS / Tailwind</span>
+        <span>JavaScript</span>
+        <span>UI / UX Design</span>
+        <span>Prototyping / Wireframing</span>
+        <span>Responsive Design</span>
+        <span>User Research</span>
+        <span>Figma / Adobe XD</span>
+        <span>Version Control (GitHub)</span>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <div class="flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center items-center text-sm">
+      <a href="mailto:shy96746@gmail.com" class="w-full sm:w-auto bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 text-center transition">Email</a>
+      <a href="https://www.linkedin.com/in/shyma-s-m-6812a325a" target="_blank" class="w-full sm:w-auto bg-blue-100 text-blue-700 px-6 py-2 rounded hover:bg-blue-200 text-center transition">LinkedIn</a>
+      <a href="./resume.pdf" class="w-full sm:w-auto bg-gray-100 text-gray-700 px-6 py-2 rounded hover:bg-gray-200 text-center transition">Resume</a>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-4 text-sm text-gray-700 mt-12 w-full">
+    © 2025 Shyma S M
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Shyma S M</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("mobile-menu");
+      nav.classList.toggle("hidden");
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-white to-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md w-full">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-4 py-3">
+      <h1 class="text-xl font-bold text-blue-800">Shyma S M</h1>
+      <nav class="hidden md:flex space-x-4 text-sm">
+        <a href="index.html" class="hover:text-blue-500">Home</a>
+        <a href="about.html" class="hover:text-blue-500">About</a>
+        <a href="project.html" class="text-blue-500 font-semibold">Projects</a>
+        <a href="contact.html" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <!-- Mobile toggle -->
+      <button class="md:hidden text-blue-600 text-lg" onclick="toggleMenu()">☰</button>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 text-sm">
+      <a href="index.html" class="block hover:text-blue-500">Home</a>
+      <a href="about.html" class="block hover:text-blue-500">About</a>
+      <a href="project.html" class="block text-blue-500 font-semibold">Projects</a>
+      <a href="contact.html" class="block hover:text-blue-500">Contact</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow w-full max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="text-3xl sm:text-4xl font-bold text-center mb-10 text-gray-900">My Projects</h2>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <!-- Project Card 1 -->
+      <div class="bg-white shadow-sm rounded-lg p-6 border hover:shadow-md transition duration-200">
+        <h3 class="text-xl font-semibold mb-2">🛒 E-commerce Website</h3>
+        <p class="text-gray-700">A stylish and responsive online store built using HTML, Tailwind CSS, and JavaScript, featuring product listings and navigation.</p>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="bg-white shadow-sm rounded-lg p-6 border hover:shadow-md transition duration-200">
+        <h3 class="text-xl font-semibold mb-2">🧥 Clothing Brand UI</h3>
+        <p class="text-gray-700">A UI/UX concept for a premium fashion brand targeting youth, with clean layouts and modern aesthetics.</p>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="bg-white shadow-sm rounded-lg p-6 border hover:shadow-md transition duration-200">
+        <h3 class="text-xl font-semibold mb-2">📚 Study Planner</h3>
+        <p class="text-gray-700">A student-friendly task management tool that supports screen switching and a clean user interface for productivity.</p>
+      </div>
+
+      <!-- Project Card 4 -->
+      <div class="bg-white shadow-sm rounded-lg p-6 border hover:shadow-md transition duration-200">
+        <h3 class="text-xl font-semibold mb-2">✨ Splash Screen</h3>
+        <p class="text-gray-700">An animated splash screen built using HTML, CSS, and JavaScript, perfect for showcasing brand identity at the start of an app or site.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center p-4 text-sm text-gray-700 mt-8 w-full">
+    © 2025 Shyma S M
+  </footer>
+
+</body>
+</html>
